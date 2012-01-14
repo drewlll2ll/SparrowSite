@@ -25,4 +25,5 @@ class Study(models.Model):
     length = models.IntegerField()
 
 class Link(models.Model):
+    name = models.CharField(max_length=100)
     url = models.URLField(unique=True)
